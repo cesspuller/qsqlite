@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Sinkholer\source\repos\sqlite_qt\x64\Debug\sqlite_qt.exe</FullPath>
+      <FullPath>X:\qtvs_sql\x64\Debug\sqlite_qt.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

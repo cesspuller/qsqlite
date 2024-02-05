@@ -1,6 +1,2 @@
-﻿  Reading Qt configuration (X:/Qt/6.6.1/msvc2019_64/bin/qmake)
-  sqlite_qt.cpp
-  main.cpp
-  qrc_sqlite_qt.cpp
-  moc_sqlite_qt.cpp
-  sqlite_qt.vcxproj -> C:\Users\Sinkholer\source\repos\sqlite_qt\x64\Release\sqlite_qt.exe
+﻿  sqlite_qt.cpp
+  sqlite_qt.vcxproj -> X:\qtvs_sql\x64\Release\sqlite_qt.exe

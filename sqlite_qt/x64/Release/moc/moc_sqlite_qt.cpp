@@ -36,28 +36,28 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSsqlite_qtENDCLASS_t {};
-static constexpr auto qt_meta_stringdata_CLASSsqlite_qtENDCLASS = QtMocHelpers::stringData(
-    "sqlite_qt"
+struct qt_meta_stringdata_CLASSTMainWindowENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSTMainWindowENDCLASS = QtMocHelpers::stringData(
+    "TMainWindow"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSsqlite_qtENDCLASS_t {
+struct qt_meta_stringdata_CLASSTMainWindowENDCLASS_t {
     uint offsetsAndSizes[2];
-    char stringdata0[10];
+    char stringdata0[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSsqlite_qtENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSsqlite_qtENDCLASS_t qt_meta_stringdata_CLASSsqlite_qtENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSTMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSTMainWindowENDCLASS_t qt_meta_stringdata_CLASSTMainWindowENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 9)   // "sqlite_qt"
+        QT_MOC_LITERAL(0, 11)   // "TMainWindow"
     },
-    "sqlite_qt"
+    "TMainWindow"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSsqlite_qtENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSTMainWindowENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -73,20 +73,20 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSsqlite_qtENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject sqlite_qt::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject TMainWindow::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_CLASSsqlite_qtENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSsqlite_qtENDCLASS,
+    qt_meta_stringdata_CLASSTMainWindowENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSTMainWindowENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSsqlite_qtENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSTMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<sqlite_qt, std::true_type>
+        QtPrivate::TypeAndForceComplete<TMainWindow, std::true_type>
     >,
     nullptr
 } };
 
-void sqlite_qt::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void TMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
     (void)_id;
@@ -94,20 +94,20 @@ void sqlite_qt::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     (void)_a;
 }
 
-const QMetaObject *sqlite_qt::metaObject() const
+const QMetaObject *TMainWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *sqlite_qt::qt_metacast(const char *_clname)
+void *TMainWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSsqlite_qtENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSTMainWindowENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
-int sqlite_qt::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int TMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     return _id;

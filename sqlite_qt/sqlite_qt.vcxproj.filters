@@ -29,7 +29,7 @@
     <QtUic Include="sqlite_qt.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="sqlite_qt.h">
+    <QtMoc Include="sqlite_qt.hpp">
       <Filter>Header Files</Filter>
     </QtMoc>
     <ClCompile Include="sqlite_qt.cpp">
