@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="sqlite_qt">
+    </qresource>
+</RCC>
