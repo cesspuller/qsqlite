@@ -4,10 +4,12 @@
 #include <qmainwindow.h>
 #include <qsqldatabase.h>
 #include <qsqlquery.h>
-#include <qsqltablemodel.h>
+//#include <qsqltablemodel.h>
+#include <qsqlerror.h>
+#include <qsqlrelationaltablemodel>
 #include <qpushbutton.h>
 #include "ui_sqlite_qt.h"
-#include <set>
+#include <vector>
 
 using namespace std;
 
@@ -22,21 +24,25 @@ class TMainWindow : public QMainWindow
 
    private slots:
 
-   void qAddEntry();
+   //! ‘ункци€-слот дл€ добавлени€ новой €чейки в бд 
+   void qAddEntry( );
 
+   //! ‘ункци€-слот дл€ удалени€ €чейки из бд 
    void qDeleteEntry();
 
+   //! ‘ункци€-слот дл€ отслеживани€ выбраных €чеек в текущий момент
    void qSelectedRow( const QItemSelection&, const QItemSelection& );
    
    private:
 
    Ui::sqlite_qtClass ui;
-
    QSqlDatabase dataBase;
-   QSqlDatabase buckUpDataBase;
-
    QSqlQuery* query;
-   QSqlTableModel* qtable;
+   QSqlRelationalTableModel* qtableMain;
 
-   set<int> selectedRows;
+   QSqlTableModel* contactsModel;
+   QSqlTableModel* phoneNumbersModel;
+   QSqlTableModel* emailsModel;
+
+   vector<int> selectedRows;
 };
