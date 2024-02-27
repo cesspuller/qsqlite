@@ -73,10 +73,6 @@ void TMainWindow::qDeleteEntry()
    for ( auto& elem : selectedRows )
    {
       contactsModel->removeRow( elem );
-
-      ui.tableView_2->repaint();
-      ui.tableView_3->repaint();
-      //qDebug() << "ERROR:" << phoneNumbersModel->lastError().text();
    }
 };
 
