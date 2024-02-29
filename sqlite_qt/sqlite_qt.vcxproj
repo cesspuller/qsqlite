@@ -92,9 +92,13 @@
   <ItemGroup>
     <QtRcc Include="sqlite_qt.qrc" />
     <QtUic Include="sqlite_qt.ui" />
-    <QtMoc Include="sqlite_qt.hpp" />
-    <ClCompile Include="sqlite_qt.cpp" />
+    <QtMoc Include="TMainWindow.hpp" />
+    <ClCompile Include="TLogger.cpp" />
+    <ClCompile Include="TMainWindow.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TLogger.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -1,12 +1,12 @@
-#include "sqlite_qt.hpp"
+#include "TMainWindow.hpp"
 #include <QtWidgets/QApplication>
 
-int main(int argc, char *argv[])
+int main( int argc, char* argv[] )
 {
-    QApplication a(argc, argv);
-    TMainWindow w;
+   QApplication a( argc, argv );
+   TMainWindow w;
 
-    w.show();
+   w.show();
 
-    return a.exec();
-}
+   return a.exec();
+};
